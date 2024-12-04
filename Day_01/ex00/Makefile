@@ -18,7 +18,7 @@ hex:
 	$(COPY) $(OBJ) $(NAME)
 
 flash: 
-	avrdude -p m328p -b $(BAUD) -c $(PROGRAMMER) -P $(PORT) -D -U $(NAME)
+	avrdude -p m328p -b $(BAUD) -c $(PROGRAMMER) -P $(PORT) -U $(NAME)
 
 clean:
 	$(RM) $(OBJ) $(NAME)
