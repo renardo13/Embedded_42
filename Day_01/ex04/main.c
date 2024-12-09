@@ -31,7 +31,7 @@ int	main(void)
 	// Infinite loop to control the incrementation of OCR1A with the switches
 	while (1)
 	{
-		if (!(PIND & (1 << PD2)) && OCR1A <= ICR1)
+		if (!(PIND & (1 << PD2)) && OCR1A < ICR1)
 		{
 			OCR1A += value;
 			while (!(PIND & (1 << PD2)))
