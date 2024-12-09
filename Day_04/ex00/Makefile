@@ -4,7 +4,7 @@ OBJ   		= main.bin
 CC    		= avr-gcc
 COPY 		= avr-objcopy
 RM   	 	= rm -f
-FLAGS		= -Wall -Wextra -Werror
+FLAGS		= -Wall
 MMCU  		= -mmcu=atmega328p
 F_CPU 		= -F_CPU=16000000UL
 BAUD 		= 115200
